@@ -1,0 +1,10 @@
+/* Color Link Activo NavBar */
+.nav-tabs{
+    border-bottom: 1px solid #f4e5a8 !important;
+}
+
+.nav-link.active{
+    background-color: #f4e5a8 !important;
+    border-color: transparent !important;
+    color: #979797 !important;
+}

@@ -1,0 +1,43 @@
+/* Color Link Activo NavBar */
+.nav-tabs{
+    border-bottom: 1px solid #dba5b4 !important;
+}
+
+.nav-link.active{
+    background-color: #dba5b4 !important;
+    border-color: transparent !important;
+}
+
+/* Imagen Fondo Index */
+.seccionIndex{
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    overflow: hidden;
+}
+
+.fondoIndexImg{
+    background-color: #edd2d9;
+    background-image: url(../multimedia/index/fondo_index_inspiracion.jpg);
+    z-index: -10;
+    height: 100%;
+    opacity: 0.8;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Texto Index */
+.laura{
+    color: #979797;
+    background-color: transparent;
+    font-size: 2rem;
+    text-shadow: 1px 1px 3px #979797;
+}
+
+.indexLogo{
+    margin-top: 10vh;
+}
