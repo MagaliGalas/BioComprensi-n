@@ -1,10 +1,141 @@
 /* Color Link Activo NavBar */
-.nav-tabs{
+.nav-tabs {
     border-bottom: 1px solid #f4e5a8 !important;
 }
 
-.nav-link.active{
+.nav-link.active {
     background-color: #f4e5a8 !important;
     border-color: transparent !important;
     color: #979797 !important;
+}
+
+/* Cursos */
+
+/* Contenedor de todas las cards de cada curso */
+.containerCard {
+    max-width: 1920px; /* Es el tamaño máximo que puede ocupar el contenedor de todas las tarjetas de los cursos */
+    margin: auto; /* Es el margen del contenedor de todos los cursos, respecto a la izq y der */
+    margin-top: 20vh; /* Para que se separe del nav */
+    margin-bottom: 30vh; /* Para que se separe del footer */
+    perspective: 1000px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Contenedor padre de cada tarjeta de cada curso */
+.cardPadre {
+    margin: 20px;
+    perspective: 1000px;
+}
+
+/* Rotacion del contenedor padre de cada tarjeta de cada curso */
+.cardPadre:hover .tarjeta {
+    transform: rotateY(180deg);
+}
+
+/* Contenedor hijo de cada padre de cada tarjeta de cada curso */
+.tarjeta {
+    width: 300px; /* Ancho de cada curso */
+    height: 300px; /* Alto de cada curso */
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 600ms;
+}
+
+/* Frente de cada tarjeta de cada curso (Contenedor) */
+.cardFrente {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden; /* La cara de atras no se muestra */
+    transform-style: preserve-3d; /* Hace que el movimiento se vea en 3D */
+    border-radius: 1000px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+/* Frente de cada tarjeta de cada curso (Cuerpo) */
+.cardFrenteBody {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateZ(60px); /* Se mueve en el eje Z. Es para que el texto se despegue y no quede plano */
+}
+
+/* Texto del titulo del frente de la tarjeta */
+.cardFrenteBody h1 {
+    font-size: 3rem;
+    color: #fefcf6;
+}
+
+/* Fondo de cada tarjeta de cada curso (Contenedor) */
+.cardFondo {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden; /* La cara de atras no se muestra */
+    transform-style: preserve-3d; /* Hace que el movimiento se vea en 3D */
+    border-radius: 1000px;
+    transform: rotateY(180deg);
+    background: #e0e0e0;
+}
+
+/* Fondo de cada tarjeta de cada curso (Cuerpo) */
+.cardFondoBody {
+    padding: 40px;
+    text-align: center;
+}
+
+/* Texto del titulo del fondo de la tarjeta */
+.cardFondoBody h1{
+    font-size: 2rem;
+    color: #484848;
+}
+
+/* Texto del parrafo del fondo de la tarjeta */
+.cardFondoBody p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #484848;
+}
+
+.cardFondoBody input {
+    padding: 7px 10px;
+    margin-top: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    box-shadow: 1px 1px 10px -5px;
+    border-radius: 30px;
+    transition: box-shadow 600ms, background-color 600ms;
+    transform: translateZ(60px); /* Se mueve en el eje Z. Es para que el texto se despegue y no quede plano */
+    background-color: #f4e5a8;
+    color: #484848;
+}
+
+.cardFondoBody input:hover {
+    box-shadow: 1px 1px 15px -5px;
+    background-color: #fefcf6;
+}
+
+/* Fondo de la tarjeta cursos */
+.bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 1000px;
 }

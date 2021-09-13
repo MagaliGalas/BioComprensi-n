@@ -11,11 +11,11 @@
 
 /* Contenedor Biografia */
 .sobreMi{
-    margin-top: 26vh;
+    margin-top: 20vh;
     margin-left: 20vw;
     margin-right: 20vw;
+    margin-bottom: 20vh;
 }
-
 
 .sobreMi img{
     border-radius: 50%;
@@ -34,4 +34,35 @@
 
 .sobreMiContenedor2 p{
     color: #979797;
+    font-size: 1.2rem;
+    height: 18em;
+}
+
+/* Modificación ScrollBar */
+
+
+.sobreMiContenedor2::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.sobreMiContenedor2::-webkit-scrollbar:vertical {
+    width: 8px;
+}
+
+.sobreMiContenedor2::-webkit-scrollbar-button:increment,.sobreMiContenedor2::-webkit-scrollbar-button {
+    display: none;
+} 
+
+.sobreMiContenedor2::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+
+.sobreMiContenedor2::-webkit-scrollbar-thumb {
+    background-color: #979797;
+    border-radius: 20px;
+    border: 2px solid #fcf9f8;
+}
+
+.sobreMiContenedor2::-webkit-scrollbar-track {
+    border-radius: 10px;  
 }
