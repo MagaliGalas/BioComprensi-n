@@ -74,6 +74,16 @@ a {
     padding-bottom: 18px;
 }
 
+.pieRRSS a img:last-child {
+    display: none;  
+  }
+  a:hover img:last-child {
+    display: block;  
+  }
+  a:hover img:first-child {
+    display: none;  
+}
+
 /* Footer Texto 2 (BEM) */
 .pieTexto{
     background-color: transparent;
