@@ -1,9 +1,297 @@
 /* Color Link Activo NavBar */
-.nav-tabs{
+.nav-tabs {
     border-bottom: 1px solid #bad1b8 !important;
 }
 
-.nav-link.active{
+.nav-link.active {
     background-color: #bad1b8 !important;
     border-color: transparent !important;
+}
+
+/* Contenedor Biografia */
+.praxis {
+    margin-top: 20vh;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    margin-bottom: 5vh;
+}
+
+.praxis img {
+    border-radius: 50%;
+    box-shadow: 9.91px 9.91px 15px #d1d2d3, -9.91px -9.91px 15px #fff;
+}
+
+/* Imagen Biografia */
+.praxisContenedor1 {
+    padding-right: 3vw;
+}
+
+/* Texto Biografia */
+.praxisContenedor2 {
+    padding-left: 3vw;
+}
+
+.praxisContenedor2 p {
+    color: #979797;
+    font-size: 1.2rem;
+    height: 18em;
+}
+
+/* Modificación ScrollBar */
+
+.praxisContenedor2::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.praxisContenedor2::-webkit-scrollbar:vertical {
+    width: 8px;
+}
+
+.praxisContenedor2::-webkit-scrollbar-button:increment,
+.praxisContenedor2::-webkit-scrollbar-button {
+    display: none;
+}
+
+.praxisContenedor2::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+
+.praxisContenedor2::-webkit-scrollbar-thumb {
+    background-color: #979797;
+    border-radius: 20px;
+    border: 2px solid #fcf9f8;
+}
+
+.praxisContenedor2::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+/* Curso Praxis */
+/* Contenedor de todas las cards de cada curso */
+.containerCard {
+    max-width: 1920px;
+    /* Es el tamaño máximo que puede ocupar el contenedor de todas las tarjetas de los cursos */
+    margin: auto;
+    /* Es el margen del contenedor de todos los cursos, respecto a la izq y der */
+    margin-top: 5vh;
+    /* Para que se separe del nav */
+    margin-bottom: 10vh;
+    /* Para que se separe del footer */
+    perspective: 1000px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Contenedor padre de cada tarjeta de cada curso */
+.cardPadre {
+    margin: 20px;
+    perspective: 1000px;
+}
+
+/* Rotacion del contenedor padre de cada tarjeta de cada curso */
+.cardPadre:hover .tarjeta {
+    transform: rotateY(180deg);
+}
+
+/* Contenedor hijo de cada padre de cada tarjeta de cada curso */
+.tarjeta {
+    width: 300px;
+    /* Ancho de cada curso */
+    height: 300px;
+    /* Alto de cada curso */
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 600ms;
+}
+
+/* Frente de cada tarjeta de cada curso (Contenedor) */
+.cardFrente {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    /* La cara de atras no se muestra */
+    transform-style: preserve-3d;
+    /* Hace que el movimiento se vea en 3D */
+    border-radius: 1000px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+/* Frente de cada tarjeta de cada curso (Cuerpo) */
+.cardFrenteBody {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateZ(60px);
+    /* Se mueve en el eje Z. Es para que el texto se despegue y no quede plano */
+}
+
+/* Fondo de cada tarjeta de cada curso (Contenedor) */
+.cardFondo {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    /* La cara de atras no se muestra */
+    transform-style: preserve-3d;
+    /* Hace que el movimiento se vea en 3D */
+    border-radius: 1000px;
+    transform: rotateY(180deg);
+    background: #e0e0e0;
+}
+
+/* Fondo de cada tarjeta de cada curso (Cuerpo) */
+.cardFondoBody {
+    text-align: center;
+    padding: 15%;
+    transform-style: preserve-3d;
+    width: 300px;
+    height: 220px;
+}
+
+/* Texto del parrafo del fondo de la tarjeta */
+.cardFondoBody p {
+    padding-top: 5%;
+    font-size: 1rem;
+    color: #484848;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0 !important;
+}
+
+/* Boton del parrafo del fondo de la tarjeta */
+.cardFondoButton {
+    width: 300px;
+    height: 80px;
+    transform-style: preserve-3d;
+}
+
+.cardFondo button {
+    padding: 7px 10px;
+    margin-top: 1%;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    box-shadow: 1px 1px 10px -5px;
+    border-radius: 30px;
+    transition: box-shadow 600ms, background-color 600ms;
+    transform: translateZ(60px);
+    /* Se mueve en el eje Z. Es para que el texto se despegue y no quede plano */
+    background-color: #bad1b8;
+    color: #484848 !important;
+    text-decoration: none;
+    margin-left: 29%;
+}
+
+.cardFondo button:hover {
+    box-shadow: 1px 1px 15px -5px;
+    background-color: #fefcf6;
+}
+
+/* Fondo de la tarjeta cursos */
+.bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 1000px;
+}
+
+/* Modal Padre */
+.modal-content {
+    background-color: #f8faf8 !important;
+    border: none !important;
+    border-radius: 30px !important;
+}
+
+.modal-header {
+    border-bottom: none !important;
+}
+
+/* Modal Titulo */
+.modal-title {
+    color: #484848;
+    font-weight: bold;
+}
+
+/* Modal Body Parrafo */
+.modal-body p {
+    color: #484848;
+    margin-bottom: 0 !important;
+}
+
+/* Modal Footer */
+.modal-footer {
+    border-top: none !important;
+}
+
+/* Modal Boton */
+.modal-footer a {
+    text-decoration: none !important;
+}
+
+.boton__M {
+    font-size: 1rem;
+    background: #bad1b8;
+    color: #484848;
+    padding: 0.2em 1.2em;
+    padding-left: 1.2em;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.2s;
+}
+
+.boton__M span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+}
+
+.boton__M button svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+}
+
+button:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+button:hover svg {
+    transform: translateX(0.2em) rotate(45deg) scale(1.1);
+}
+
+button:hover span {
+    transform: translateX(0.5em);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+    from {
+        transform: translateY(0.1em);
+    }
+
+    to {
+        transform: translateY(-0.1em);
+    }
 }
