@@ -16,7 +16,7 @@
     max-width: 1920px; /* Es el tamaño máximo que puede ocupar el contenedor de todas las tarjetas de los cursos */
     margin: auto; /* Es el margen del contenedor de todos los cursos, respecto a la izq y der */
     margin-top: 20vh; /* Para que se separe del nav */
-    margin-bottom: 30vh; /* Para que se separe del footer */
+    margin-bottom: 10vh; /* Para que se separe del footer */
     perspective: 1000px;
     display: flex;
     justify-content: center;

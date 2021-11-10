@@ -6,7 +6,7 @@
 }
 
 /* Contenido Centrado General*/
-.centrarContenido{
+.centrarContenido {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -24,49 +24,119 @@ a {
 }
 
 /* Hover */
-.nav-link.inicio:hover{
+.nav-link.inicio:hover {
     background-color: #dba5b4;
     border-color: transparent !important;
 }
 
-.nav-link.sobre:hover{
+.nav-link.sobre:hover {
     background-color: #e2c0bb;
     border-color: transparent !important;
     color: #979797 !important;
 }
 
-.nav-link.cursos:hover{
+.nav-link.cursos:hover {
     background-color: #f4e5a8;
     border-color: transparent !important;
     color: #979797 !important;
 }
 
-.nav-link.praxis:hover{
+.nav-link.praxis:hover {
     background-color: #bad1b8;
     border-color: transparent !important;
 }
 
-.nav-link.contacto:hover{
+.nav-link.contacto:hover {
     background-color: #99c3be;
     border-color: transparent !important;
 }
 
 /* Pie de Pagina */
+.container_all {
+    position: fixed;
+    left: 0;
+    transition: all 300ms;
+    bottom: 0;
+    width: 100%;
+}
 
-/* Footer Texto */
-.pie{
-    padding-top: 10px;
-    padding-bottom: 10px;
+.cover {
+    width: 100%;
+    padding-bottom: 23vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.bg_color {
+    width: 100%;
+    height: 70%;
     background-color: #979797;
+    position: absolute;
+    padding-top: 1vh;
+    padding-bottom: 10px;
+    margin-top: 7vh;
+}
+
+.wave {
+    background-image: url(../multimedia/footer/wd5.svg);
+    width: 6000px;
+    height: 100%;
+    position: absolute;
+    bottom: 16vh;
+}
+
+/* Olas 1 */
+.w1 {
+    animation: w1 50s linear infinite;
+    /* Linear para que sea ininterrumpida */
+}
+
+@keyframes w1 {
+    0% {
+        margin-left: 0;
+    }
+
+    100% {
+        margin-left: -1600px;
+    }
+}
+
+/* Olas 2 */
+.w2 {
+    animation: w2 50s linear -.125s infinite, desplazamiento 10s ease -.125s infinite;
+    /* Ease es para que sea erratico */
+    opacity: 0.5;
+}
+
+@keyframes w2 {
+    0% {
+        margin-left: 0;
+    }
+
+    100% {
+        margin-left: -1600px;
+    }
+}
+
+@keyframes desplazamiento {
+
+    0%,
+    100% {
+        transform: translateY(-10px);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
 }
 
 /* Footer RRSS Contenedor */
-.pieRRSS{
+.pieRRSS {
     background-color: transparent;
 }
 
 /* Footer RRSS Imagenes */
-.pieImgRRSS{
+.pieImgRRSS {
     background-color: transparent;
     padding-left: 10px;
     padding-right: 10px;
@@ -75,19 +145,20 @@ a {
 }
 
 .pieRRSS a img:last-child {
-    display: none;  
-  }
-  a:hover img:last-child {
-    display: block;  
-  }
-  a:hover img:first-child {
-    display: none;  
+    display: none;
+}
+
+a:hover img:last-child {
+    display: block;
+}
+
+a:hover img:first-child {
+    display: none;
 }
 
 /* Footer Texto 2 (BEM) */
-.pieTexto{
+.pieTexto {
     background-color: transparent;
     color: #fbf6f7;
     font-size: 1.2rem;
 }
-
