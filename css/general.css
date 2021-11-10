@@ -148,11 +148,11 @@ a {
     display: none;
 }
 
-a:hover img:last-child {
+.pieRRSS a:hover img:last-child {
     display: block;
 }
 
-a:hover img:first-child {
+.pieRRSS a:hover img:first-child {
     display: none;
 }
 
