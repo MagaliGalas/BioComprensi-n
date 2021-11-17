@@ -18,8 +18,10 @@
     background-color: #979797;
     color: #fbf6f7;
     font-size: 1.2rem;
-    padding-top: 0 !important; /* Edite la clase por defecto de Boostrap */
-    padding-bottom: 0 !important; /* Edite la clase por defecto de Boostrap */
+    padding-top: 0 !important;
+    /* Edite la clase por defecto de Boostrap */
+    padding-bottom: 0 !important;
+    /* Edite la clase por defecto de Boostrap */
 }
 
 a {
@@ -172,9 +174,15 @@ a {
     display: none;
 }
 
-/* Footer Texto 2 (BEM) */
+/* Footer Texto */
 .pieTexto {
     background-color: transparent;
     color: #fbf6f7;
     font-size: 1.2rem;
+    padding-bottom: 1vh;
+}
+
+/* Animacion Animated */
+.animacionHidden {
+    overflow: hidden;
 }

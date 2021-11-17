@@ -8,12 +8,15 @@
     border-color: transparent !important;
 }
 
+/* Titulo "Cursos" */
+.tituloPraxis {
+    margin-top: 15vh;
+    text-align: center;
+}
+
 /* Contenedor Biografia */
 .praxis {
-    margin-top: 20vh;
-    margin-left: 20vw;
-    margin-right: 20vw;
-    margin-bottom: 5vh;
+    margin-top: 5vh;
 }
 
 .praxis img {
@@ -23,7 +26,8 @@
 
 /* Imagen Biografia */
 .praxisContenedor1 {
-    padding-right: 3vw;
+    align-self: center;
+    text-align: center;
 }
 
 /* Texto Biografia */
@@ -38,7 +42,6 @@
 }
 
 /* Modificación ScrollBar */
-
 .praxisContenedor2::-webkit-scrollbar {
     -webkit-appearance: none;
 }
@@ -67,6 +70,11 @@
 }
 
 /* Curso Praxis */
+.tituloCursosPraxis {
+    margin-top: 10vh;
+    text-align: center;
+}
+
 /* Contenedor de todas las cards de cada curso */
 .containerCard {
     max-width: 1920px;
@@ -120,7 +128,6 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
 }
 
 /* Frente de cada tarjeta de cada curso (Cuerpo) */
@@ -293,5 +300,12 @@ button:active {
 
     to {
         transform: translateY(-0.1em);
+    }
+}
+
+/* Media Queri Imagenes */
+@media (max-width: 767px) {
+    .praxisImg {
+        margin-bottom: 5vh;
     }
 }
