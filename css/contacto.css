@@ -10,74 +10,126 @@
 
 /* Formulario de Contacto */
 
-.formilarioContacto{
-    margin-top: 20vh;
+/* Margen de todo el formulario */
+.form {
+    margin-top: 13vh !important;
 }
 
-.cajaFormulario {
+/* Columna izquierda del formulario */
+.formIzquierda{
+    padding-top: 5vh;
+}
+
+/* Centrar mapa */
+.formMapa {
     text-align: center;
+}
+
+/* Estilo del mapa */
+.formMapa iframe {
+    border-radius: 0.25rem;
     box-shadow: 9.91px 9.91px 15px #d1d2d3, -9.91px -9.91px 15px #fff;
 }
 
-.col{ /* Modifique la clase de Boostrap */
-    padding-right: 0 !important;
-    padding-left: 0 !important;
-}
+/* Media Query Mapa */
+@media (max-width: 768px) {
+    .formMapaSM iframe{
+         width: 400px;
+         height: 200px;
+     }
+ }
 
-.formuContacto{
-    padding-right: 4vw;
-    padding-left: 4vw;
-    padding-top: 4vh;
-    padding-bottom: 4vh;
-    background-color: #979797;
-    border-radius: 0rem 0.5rem 0.5rem 0rem;
-}
-
-.formuCajitas{
-    padding-top: 2vh !important;
-    padding-bottom: 2vh !important;
-    background-color: transparent;
-    color: #f5f9f8;
-    text-align: left;
-}
-
-.formuCajitas input{
-    border-radius: 15px;
-    background-color: #f5f9f8;
-}
-
-.formuCajitas textarea{
-    border-radius: 15px;
-    background-color: #f5f9f8;
-}
-
-.form-floating{
+/* Estilo items formulario izquierda */
+.formItems {
+    font-size: 1rem;
+    color: #979797;
     margin-top: 2vh;
-    margin-bottom: 6vh;
 }
 
-.formuBoton{
+/* Estilo contenedor de los items */
+.formSvg {
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilo imagen de los items */
+.formSvg svg{
+    margin-right: 1em;
+    align-self: center;
+}
+
+/* Estilo formulario margen derecha */
+.form form {
+    padding-top: 5vh;
+}
+
+/* Cajas del formulario */
+.formCajas {
+    padding-top: 2%;
+    padding-right: 10% !important;
+}
+
+.formCajas input {
+    box-shadow: 9.91px 9.91px 15px #d1d2d3, -9.91px -9.91px 15px #fff;
+    color: #979797 !important;
+    background-color: #ebf3f2 !important;
+    border: 1px solid #979797 !important;
+}
+
+.formCajas input:focus {
+    outline: none !important;
+    box-shadow: 0 0 10px #99c3be;
+    border: 1px solid #99c3be !important;
+  }
+
+.formCajas textarea {
+    box-shadow: 9.91px 9.91px 15px #d1d2d3, -9.91px -9.91px 15px #fff;
+    color: #979797 !important;
+    background-color: #ebf3f2 !important;
+    border: 1px solid #979797 !important;
+}
+
+.formCajas textarea:focus{
+    outline: none !important;
+    box-shadow: 0 0 10px #99c3be;
+    border: 1px solid #99c3be !important;
+}
+
+/* Media Query Formulario */
+@media (max-width: 768px) {
+    .formCajasSM {
+         padding-right: 3% !important;
+     }
+ }
+
+/* Boton del formulario */
+.formBoton {
+    padding-top: 3%;
+    text-align: -webkit-right;
+    padding-right: 10% !important;
+}
+
+.boton__M {
     font-size: 1rem;
     background: #99c3be;
-    color: #505050;
+    color: #f5f9f8;
     padding: 0.2em 1.2em;
-    padding-left: 1em;
+    padding-left: 1.2em;
     display: flex;
     align-items: center;
     border: none;
     border-radius: 16px;
     overflow: hidden;
     transition: all 0.2s;
-    float: right;
 }
 
-.formuBoton input {
+.boton__M span {
     display: block;
     margin-left: 0.3em;
     transition: all 0.3s ease-in-out;
 }
 
-.formuBoton button svg {
+.boton__M button svg {
     display: block;
     transform-origin: center center;
     transition: transform 0.3s ease-in-out;
@@ -91,7 +143,7 @@ button:hover svg {
     transform: translateX(0.2em) rotate(45deg) scale(1.1);
 }
 
-button:hover input {
+button:hover span {
     transform: translateX(0.5em);
 }
 
@@ -109,26 +161,20 @@ button:active {
     }
 }
 
-.contactoMapa{
+/* Mensaje del formulario */
+.formMsj{
+    padding-top: 2vh;
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    color: #979797;
     text-align: center;
-    padding-top: 4vh;
-    border-radius: 0.5rem;
+    padding-right: 10% !important;
 }
 
-.contactoCaja{
-    background-color: #99c3be !important;
-    border: none !important;
-    border-radius: 0.5rem 0rem 0rem 0.5rem !important;
-}
-
-
-
-
-
-
-
-
-
-
-
-
+/* Media Query Formulario */
+@media (max-width: 768px) {
+    .formMsjSM {
+         padding-right: 3% !important;
+     }
+ }

@@ -28,6 +28,17 @@ a {
     color: #fbf6f7 !important;
 }
 
+/* Media Query Logo */
+@media (max-width: 768px) {
+    .logoBlanco {
+         display: none;
+     }
+
+     .logoIndex a img:last-child{
+         display: inherit !important;
+     }
+ }
+
 /* Hover */
 .nav-link.inicio:hover {
     background-color: #dba5b4;
